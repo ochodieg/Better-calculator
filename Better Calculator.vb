@@ -8,9 +8,9 @@ Option Compare Text
 'https//github.com/ochodieg/Better-calculator
 
 
-Module Module1
+Module Module1 ' Module, project, solution names should be PascalCase and not default - TJR
 
-    Sub Main()
+    Sub Main() ' Remove extra blank lines - TJR
         Dim betterData As Boolean
 
         Dim userInput1, userInput2, userRespons As String
@@ -90,8 +90,7 @@ Module Module1
 
                     Console.WriteLine("You entered: " & firstNumber & " / " & seconNumber & " that = " &
                                       firstNumber / seconNumber)
-                ElseIf userRespons <> "multiply" Or userRespons <> "*" Or userRespons <> "Add" Or userRespons <>
-                    "+" Then
+                Else 'else will do here - TJR
 
                     Console.WriteLine("what are ya, crazy?")
                 End If
